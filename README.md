@@ -9,5 +9,5 @@ And delete my *ugly face*, *name* and *profil* from the page.
 
 **_Personalize it_**, don't copy it and leave it the same.
 
-Made with ♥ by :
+Made with :heart: by :
 > Titouan GALVANI
