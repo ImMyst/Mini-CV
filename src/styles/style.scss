@@ -1,5 +1,7 @@
+@import "variables";
+
 body {
-  background: linear-gradient(60deg, rgba(250, 105, 0, 0.4) 2%, rgba(105, 210, 231, 0.7)), url("https://images.unsplash.com/photo-1467745695289-307cecbc3bf1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4b11fb5d44cdcb7f9bfa22f0cee7dd61&auto=format&fit=crop&w=1100&q=80") fixed;
+  background: linear-gradient(60deg, rgba(250, 105, 0, 0.4) 2%, rgba(105, 210, 231, 0.7)), url($bg-img) fixed;
   background-size: cover;
   font-family: 'Permanent Marker', cursive;
 }
@@ -48,7 +50,7 @@ span {
 
 h3 {
   font-size: 25px;
-  text-decoration: underline rgba(250, 105, 0, 0.7);
+  text-decoration: underline $orange-underline;
   margin-bottom: 1rem;
 }
 
@@ -62,15 +64,15 @@ li {
 }
 
 li a {
+  box-shadow: inset 0 -4px 0 0 $orange-underline;
+  color: $text-color;
   text-decoration: none;
-  color: #212529;
-  box-shadow: inset 0 -4px 0 0 rgba(250, 105, 0, 0.7);
   transition: 0.5s;
 }
 
 li a:hover {
-  box-shadow: inset 0 -22px 0 0 rgba(250, 105, 0, 0.7);
-  color: #212529;
+  box-shadow: inset 0 -22px 0 0 $orange-underline;
+  color: $text-color;
   text-decoration: none;
 }
 
@@ -85,7 +87,7 @@ li a:hover {
 }
 
 .fa-linkedin-in {
-  color: #0077B5;
+  color: $linkedin-color;
 }
 
 .fa-github {
@@ -93,5 +95,5 @@ li a:hover {
 }
 
 .fa-file-pdf {
-  color: rgb(250, 105, 0);
+  color: $orange-underline;
 }
