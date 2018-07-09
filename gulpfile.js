@@ -12,7 +12,8 @@ const browserSync = require('browser-sync');
 gulp.task('browser-sync', function() {
     browserSync({
         server: {
-            baseDir: "public"
+            baseDir: "public",
+            chrome: '-browser "chrome.exe"'
         }
     });
 });
