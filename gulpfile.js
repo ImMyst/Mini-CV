@@ -2,6 +2,8 @@ const gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache');
 const minifycss = require('gulp-minify-css');
@@ -44,6 +46,21 @@ gulp.task('styles', function(){
         .pipe(browserSync.reload({stream:true}))
 });
 
+gulp.task('scripts', function(){
+    gulp.src(['src/scripts/*'])
+        .pipe(plumber({
+            errorHandler: function (error) {
+                console.log(error.message);
+                this.emit('end');
+            }}))
+        .pipe(concat('index.js'))
+        .pipe(gulp.dest('public/scripts/'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(uglify())
+        .pipe(gulp.dest('public/scripts/'))
+        .pipe(browserSync.reload({stream:true}))
+});
+
 gulp.task('pages', function() {
     return gulp.src(['./src/*.html'])
         .pipe(htmlmin({
@@ -54,8 +71,9 @@ gulp.task('pages', function() {
 });
 
 gulp.task('default', ['browser-sync'], function(){
-    gulp.watch("src/styles/*.scss", ['styles']);
     gulp.watch("src/**/*.html", ['pages']);
+    gulp.watch("src/scripts/*", ['scripts']);
+    gulp.watch("src/styles/*.scss", ['styles']);
     gulp.watch("src/images/*", ['images']);
     gulp.watch("*.html", ['bs-reload']);
 });
