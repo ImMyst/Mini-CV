@@ -13,7 +13,7 @@ gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
             baseDir: "public",
-            browser: 'chrome'
+            open: false
         }
     });
 });
