@@ -10,10 +10,10 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync');
 
 gulp.task('browser-sync', function() {
-    browserSync({
+    browserSync.init({
         server: {
             baseDir: "public",
-            chrome: '-browser "chrome.exe"'
+            browser: 'chrome'
         }
     });
 });
