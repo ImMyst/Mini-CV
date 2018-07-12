@@ -1,0 +1,26 @@
+.content {
+  h3 {
+    font-size: 25px;
+    text-decoration: underline $orange-underline;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    padding-left: 0;
+    li {
+      font-size: 16px;
+      list-style: none;
+      a {
+        box-shadow: inset 0 -4px 0 0 $orange-underline;
+        color: $text-color;
+        text-decoration: none;
+        transition: 0.5s;
+        &:hover {
+          box-shadow: inset 0 -22px 0 0 $orange-underline;
+          color: $text-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

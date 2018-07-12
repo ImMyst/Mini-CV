@@ -1,0 +1,24 @@
+
+.social {
+
+  .icon {
+    font-size: 50px;
+    transition: 0.15s;
+    &:hover {
+      transform: scale(1.15);
+      opacity: 0.83;
+    }
+  }
+
+  .fa-linkedin-in {
+    color: $linkedin-color;
+  }
+
+  .fa-github {
+    color: black;
+  }
+
+  .fa-file-pdf {
+    color: $orange-underline;
+  }
+}

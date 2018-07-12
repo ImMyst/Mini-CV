@@ -1,0 +1,25 @@
+// Font
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+// Variables
+@import "variables";
+
+// Container
+@import "container";
+
+// Image avatar
+@import "avatar";
+
+// Personal information
+@import "information";
+
+// Skills/Formation/Hobbies content
+@import "content";
+
+// CV/LinkedIn/Github social
+@import "social";
+
+// Body
+body {
+  font-family: 'Permanent Marker', cursive;
+}
