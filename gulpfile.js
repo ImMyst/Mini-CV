@@ -15,9 +15,7 @@ gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
             baseDir: "public",
-            browser: "google chrome",
-            proxy: 'titouangalvani-mini-cv.netlify',
-            notify: false
+            open: false
         }
     });
 });
