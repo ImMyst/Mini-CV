@@ -1,4 +1,5 @@
 const backgrounds = [
+
 // Background images
     'https://images.unsplash.com/photo-1467745695289-307cecbc3bf1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4b11fb5d44cdcb7f9bfa22f0cee7dd61&auto=format&fit=crop&w=1100&q=80',
     'https://images.unsplash.com/photo-1492892132812-a00a8b245c45?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=58aeac540226daf88bd141baba89171f&auto=format&fit=crop&w=1050&q=80',
@@ -10,6 +11,8 @@ const backgrounds = [
     'https://images.unsplash.com/photo-1486899430790-61dbf6f6d98b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8ecdee5d1b3ed78ff16053b0227874a2&auto=format&fit=crop&w=1002&q=80',
     'https://images.unsplash.com/photo-1517421937867-725f85920dca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=be7c99cdd3dccbb47d008bb9173d4b20&auto=format&fit=crop&w=1050&q=80',
 ];
+
+// Change image background each page refresh
 
 window.onload = function() {
     let n = Math.floor(Math.random()*backgrounds.length);
