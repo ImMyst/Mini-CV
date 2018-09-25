@@ -1,13 +1,13 @@
 {
   "name": "mini-cv",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Mini CV using bootstrap",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp"
   },
-  "author": "",
+  "author": "Titouan.G / ImMyst",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.24.7",
