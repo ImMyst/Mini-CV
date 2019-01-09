@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 .container {
-  margin-top: 2rem;
   width: 70%;
   max-width: 600px; }
 
 .jumbotron {
+  margin-top: 5rem;
   padding-bottom: 2rem;
   -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
@@ -48,7 +48,8 @@
   margin-bottom: 1rem; }
 
 .content ul {
-  padding-left: 0; }
+  padding-left: 0;
+  text-transform: uppercase; }
   .content ul li {
     font-size: 16px;
     list-style: none; }
@@ -84,4 +85,6 @@
   color: rgba(250, 105, 0, 0.7); }
 
 body {
-  font-family: 'Permanent Marker', cursive; }
+  font-family: 'Permanent Marker', cursive;
+  height: 100vh;
+  overflow: hidden; }

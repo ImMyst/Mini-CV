@@ -12,7 +12,7 @@ const backgrounds = [
 ];
 
 window.onload = function() {
-    let n = Math.floor(Math.random()*backgrounds.length);
+    const n = Math.floor(Math.random()*backgrounds.length);
     document.body.style.background = 'linear-gradient(60deg, rgba(250, 105, 0, 0.4) 2%, rgba(105, 210, 231, 0.7)), url(' + backgrounds[n] + '), fixed';
     document.body.style.backgroundSize = 'cover';
 };
